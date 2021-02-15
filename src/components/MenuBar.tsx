@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 
 import DrawerComponents from './DrawerComponents';
 
@@ -24,6 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
     list: {
         width: 250,
     },
+    addIcon: {
+        marginRight : 10,
+    }
   }),
 );
 
@@ -59,7 +63,7 @@ const MenuBar = () => {
             <Typography variant="h6" className={classes.title}>
                 Medibot Admin
             </Typography>
-            <Button color="inherit">Add Client</Button>
+            <Button color="inherit"><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>
             </Toolbar>
         </AppBar>
         </div>

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <MenuBar />
-      <h1>Hello World</h1>
+      <h1>Welcome Admin!</h1>
     </div>
   );
 }
