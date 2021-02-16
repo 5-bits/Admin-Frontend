@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       flexGrow: 1,
+      cursor : "pointer"
     },
     list: {
         width: 250,
@@ -66,7 +67,7 @@ const MenuBar = () => {
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer()}>
                 <MenuIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
+            <Typography variant="h6" className={classes.title} onClick={()=> handleClick('/')}>
                 Medibot Admin
             </Typography>
             <Button color="inherit" onClick={()=> handleClick('/add')}><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>

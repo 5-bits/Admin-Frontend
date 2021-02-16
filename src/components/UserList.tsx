@@ -10,11 +10,11 @@ const AddUser = (props : any) => {
 
     const [userList, setUserList] = useState(
         [
-            {name : "user1", age:18, imageUrl : "https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg"},
-            {name : "user2", age:18, imageUrl : ""},
-            {name : "user3", age:18, imageUrl : "https://i.pinimg.com/564x/04/bb/21/04bb2164bbfa3684118a442c17d086bf.jpg"},
-            {name : "user4", age:18, imageUrl : ""},
-            {name : "user5", age:18, imageUrl : ""}
+            {name : "Josiitaa",  age:18, imageUrl : "https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg"},
+            {name : "Aditya",    age:18, imageUrl : ""},
+            {name : "Pratik",    age:18, imageUrl : "https://i.pinimg.com/564x/04/bb/21/04bb2164bbfa3684118a442c17d086bf.jpg"},
+            {name : "Pritviraj", age:18, imageUrl : ""},
+            {name : "Ganesh",    age:18, imageUrl : ""}
         ]
     );
 
@@ -23,6 +23,8 @@ const AddUser = (props : any) => {
     return (
         <div>
             <h1>Clients</h1>
+            <hr />
+            <br />
             <Grid container spacing={4}>
                 {list}
             </Grid>
