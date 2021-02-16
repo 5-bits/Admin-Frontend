@@ -1,5 +1,9 @@
 export interface userInterface {
     name : string,
     age : number,
-    imageUrl : string|undefined,
+    address : string,
+    imageUrl? : string,
+    email1 : string, 
+    email2 : string, 
+    remarks? : string,
 } ;

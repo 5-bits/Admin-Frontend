@@ -57,9 +57,7 @@ const UserCard = (props : {data : userInterface}) => {
                         Age : {props.data.age}
                     </Typography>
                     <Typography variant="body2" component="p">
-                        Some random info here<br />
-                        Some random info here<br />
-                        Some random info here<br />
+                        {props.data.remarks}
                     </Typography>
                 </CardContent>
                 <CardActions>

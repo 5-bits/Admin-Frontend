@@ -10,11 +10,51 @@ const AddUser = (props : any) => {
 
     const [userList, setUserList] = useState(
         [
-            {name : "Josiitaa",  age:18, imageUrl : "https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg"},
-            {name : "Aditya",    age:18, imageUrl : ""},
-            {name : "Pratik",    age:18, imageUrl : "https://i.pinimg.com/564x/04/bb/21/04bb2164bbfa3684118a442c17d086bf.jpg"},
-            {name : "Pritviraj", age:18, imageUrl : ""},
-            {name : "Ganesh",    age:18, imageUrl : ""}
+            {
+                name : "Josiitaa",  
+                age:18, 
+                address : "Chennai",
+                imageUrl : "https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg",
+                email1 : "test1@test.com",
+                email2 : "test2@test.com",
+                remarks : "Hello \n Lorem Ipsum dolor \n Some other random stuff here too"
+            },
+            {
+                name : "Aditya",  
+                age:18, 
+                address : "Delhi",
+                imageUrl : "",
+                email1 : "test1@test.com",
+                email2 : "test2@test.com",
+                remarks : "Hello \n Lorem Ipsum dolor \n Some other random stuff here too"
+            },
+            {
+                name : "Pratik",  
+                age:18, 
+                address : "Kolkata",
+                imageUrl : "https://i.pinimg.com/564x/04/bb/21/04bb2164bbfa3684118a442c17d086bf.jpg",
+                email1 : "test1@test.com",
+                email2 : "test2@test.com",
+                remarks : "Hello \n Lorem Ipsum dolor \n Some other random stuff here too"
+            },
+            {
+                name : "Prithviraj",  
+                age:18, 
+                address : "Chennai",
+                imageUrl : "",
+                email1 : "test1@test.com",
+                email2 : "test2@test.com",
+                remarks : "Hello \n Lorem Ipsum dolor \n Some other random stuff here too"
+            },
+            {
+                name : "Ganesh",  
+                age:18, 
+                address : "Chennai",
+                imageUrl : "",
+                email1 : "test1@test.com",
+                email2 : "test2@test.com",
+                remarks : "Hello \n Lorem Ipsum dolor \n Some other random stuff here too"
+            },
         ]
     );
 
