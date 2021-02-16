@@ -38,8 +38,8 @@ const MenuBar = () => {
     const [drawer, setDrawer] = React.useState(false);
     const history = useHistory();
 
-    const handleClick = () => {
-        history.push("/add");
+    const handleClick = (path : string) => {
+        history.push(path);
     }
 
     const toggleDrawer = () => (
@@ -69,7 +69,7 @@ const MenuBar = () => {
             <Typography variant="h6" className={classes.title}>
                 Medibot Admin
             </Typography>
-            <Button color="inherit" onClick={handleClick}><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>
+            <Button color="inherit" onClick={()=> handleClick('/add')}><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>
             </Toolbar>
         </AppBar>
         </div>
