@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import {useHistory} from 'react-router-dom';
 
 import DrawerComponents from './DrawerComponents';
 
@@ -35,6 +36,11 @@ const MenuBar = () => {
 
     const classes = useStyles();
     const [drawer, setDrawer] = React.useState(false);
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push("/add");
+    }
 
     const toggleDrawer = () => (
         event: React.KeyboardEvent | React.MouseEvent,
@@ -63,7 +69,7 @@ const MenuBar = () => {
             <Typography variant="h6" className={classes.title}>
                 Medibot Admin
             </Typography>
-            <Button color="inherit"><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>
+            <Button color="inherit" onClick={handleClick}><PersonAddIcon className={classes.addIcon}></PersonAddIcon> Add Client</Button>
             </Toolbar>
         </AppBar>
         </div>
