@@ -1,4 +1,5 @@
 export interface userInterface {
     name : string,
-    age : number
+    age : number,
+    imageUrl : string|undefined,
 } ;
