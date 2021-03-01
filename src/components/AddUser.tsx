@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom : 25,
         paddingLeft : 100,
         paddingRight : 100,
-        width : "75%",
+        width : "60%",
         margin : "auto",
         marginTop : 40,
         textAlign : "center"

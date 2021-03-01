@@ -10,6 +10,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { deepPurple } from '@material-ui/core/colors';
 
 import {userInterface} from '../interfaces';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,7 +62,9 @@ const UserCard = (props : {data : userInterface}) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">View Profile</Button>
+                    <Link to={'/users/'+props.data.id}>
+                         <Button size="small">View Profile</Button>
+                    </Link>
                 </CardActions>
             </Card>
         </div>

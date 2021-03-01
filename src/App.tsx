@@ -5,6 +5,7 @@ import MenuBar from "./components/MenuBar";
 import HomePage from './components/HomePage';
 import UserList from './components/UserList';
 import AddUser from './components/AddUser';
+import UserDetail from './components/UserDetail';
 
 import './css/App.css';
 
@@ -18,6 +19,9 @@ function App() {
             <Switch>
               <Route path="/add">
                 <AddUser />
+              </Route>
+              <Route path="/users/:userId">
+                <UserDetail />
               </Route>
               <Route path="/users">
                 <UserList />
