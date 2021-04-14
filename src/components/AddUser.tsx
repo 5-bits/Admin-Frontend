@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {useForm} from 'react-hook-form';
 import Grid from '@material-ui/core/Grid';
 import { deepPurple } from '@material-ui/core/colors';
-
+import axios from 'axios';
 const useStyles = makeStyles((theme) => ({
     inp: {
       minWidth: 100,
@@ -44,7 +44,17 @@ const AddUser = (props : any) => {
     const {register, handleSubmit, setValue} = useForm();
 
     const submitForm = (data : any)=> {
-        console.log(data);
+        axios({
+            method: 'post',
+            url: 'http://localhost:3200/add/user',
+            data: data
+        })
+        .then((res: any) =>{
+            console.log(res)
+        })
+        .catch((err: any)=>{
+            console.log(err)
+        })
     }
 
     return (
@@ -58,7 +68,7 @@ const AddUser = (props : any) => {
                             <TextField inputRef={register} required className={classes.inp} id="filled-basic" label="Name" variant="outlined" name="name"/>
                         </Grid>
                         <Grid item xs={4}>
-                            <TextField inputRef={register} required className={classes.inp} id="filled-basic" label="Age" type="number" variant="outlined" name="age"/>
+                            <TextField inputRef={register} required className={classes.inp} id="filled-basic" label="Age" type="text" variant="outlined" name="age"/>
                         </Grid>
                         <Grid item xs={4}>
                             <TextField inputRef={register} className={classes.inp} id="filled-basic" label="Image Url" type="url" variant="outlined" name="imageUrl" />

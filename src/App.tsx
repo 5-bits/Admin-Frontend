@@ -1,11 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
-import MenuBar from "./components/MenuBar";
-import HomePage from './components/HomePage';
-import UserList from './components/UserList';
-import AddUser from './components/AddUser';
-import UserDetail from './components/UserDetail';
+import MenuBar from "./Components/MenuBar";
+import HomePage from './Components/HomePage';
+import UserList from './Components/UserList';
+import AddUser from './Components/AddUser';
+import UserDetail from './Components/UserDetail';
 
 import './css/App.css';
 
