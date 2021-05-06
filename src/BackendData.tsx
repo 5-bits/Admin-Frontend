@@ -1,6 +1,6 @@
 import React from 'react'
 const backendUser = () => {
-    fetch('http://localhost:3200/fetch/user').then(res => res.json())
+    return fetch('http://localhost:3200/fetch/user').then(res => res.json())
     
 }
 

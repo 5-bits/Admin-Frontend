@@ -23,7 +23,7 @@ const AddUser = (props : any) => {
         backendUser();
     }, []);
     const list = userList.data.map((value:userInterface , index: any) => <Grid item xs={3}><UserCard data={value} key={index} /></Grid>);
-
+    console.log(userList.data);
     return (
         <div>
             <h1>Clients</h1>
