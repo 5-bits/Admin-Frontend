@@ -1,11 +1,7 @@
-import axios from 'axios'
+import React from 'react'
+const backendUser = () => {
+    fetch('http://localhost:3200/fetch/user').then(res => res.json())
+    
+}
 
-const backendUser = axios({
-    method: 'get',
-    url: 'http://localhost:3200/fetch/user',
-    responseType: 'json'
-})
-.then( res => res.data)
-
-
-export default backendUser.then;
+export default backendUser;
